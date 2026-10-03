@@ -24,7 +24,7 @@ function App() {
                 class="w-full h-full object-cover"
                 style="pointer-events: none;"
               >
-                <source src="/olesya-bg.mp4" type="video/mp4" />
+                <source src="./olesya-bg.mp4" type="video/mp4" />
               </video>
             `
           }}

@@ -5,19 +5,19 @@ const featuresData = [
     id: "feature-1",
     title: "Разборы без купюр",
     description: "В канале вы услышите аудио-разборы реальных историй участниц. В 90% случаев вы узнаете в них себя. Это дает моментальный инсайт.",
-    video: "/card1.mp4"
+    video: "./card1.mp4"
   },
   {
     id: "feature-2",
     title: "Перепрошивка мышления",
     description: "Психика не меняется за 3 дня марафона. Находясь в нашем поле регулярно, вы незаметно для себя меняете паттерны реакций и начинаете действовать иначе.",
-    video: "/card2.mp4"
+    video: "./card2.mp4"
   },
   {
     id: "feature-3",
     title: "Полная безопасность",
     description: "Всё абсолютно анонимно. Ваши истории разбираются без имен. Никто из ваших знакомых никогда ничего не узнает, это приватное комьюнити.",
-    video: "/card3.mp4"
+    video: "./card3.mp4"
   }
 ];
 
@@ -81,7 +81,7 @@ export default function FeaturesSection() {
               class="w-full h-full object-cover"
               style="pointer-events: none;"
             >
-              <source src="/features-bg.mp4" type="video/mp4" />
+              <source src="./features-bg.mp4" type="video/mp4" />
             </video>
           `
         }}
