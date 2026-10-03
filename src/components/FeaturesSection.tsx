@@ -119,7 +119,7 @@ export default function FeaturesSection() {
               <span className="text-white text-sm font-medium">
                 Подписка 1 190 ₽/мес. Отмена в любой момент.
               </span>
-              <button onClick={() => window.location.href="https://web.tribute.tg/s/16WO"} className="bg-white text-black text-sm font-medium px-5 py-2.5 rounded-xl hover:bg-white/90 transition-colors whitespace-nowrap">
+              <button onClick={() => window.location.href="https://web.tribute.tg/s/17h5"} className="bg-white text-black text-sm font-medium px-5 py-2.5 rounded-xl hover:bg-white/90 transition-colors whitespace-nowrap">
                 Оформить подписку
               </button>
             </div>

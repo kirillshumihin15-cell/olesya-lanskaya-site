@@ -9,7 +9,7 @@ export default function AboutSection() {
         </p>
         
         <div className="flex flex-wrap justify-center gap-4 mb-20">
-          <button onClick={() => window.location.href="https://web.tribute.tg/s/16WO"} className="bg-white text-black rounded-full flex items-center pr-6 pl-1.5 py-1.5 hover:bg-white/90 transition-colors group">
+          <button onClick={() => window.location.href="https://web.tribute.tg/s/17h5"} className="bg-white text-black rounded-full flex items-center pr-6 pl-1.5 py-1.5 hover:bg-white/90 transition-colors group">
             <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center mr-3 text-white">
               <Mail size={16} />
             </div>
