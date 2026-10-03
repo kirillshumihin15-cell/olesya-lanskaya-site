@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import AboutSection from './components/AboutSection';
 import FeaturesSection from './components/FeaturesSection';
@@ -8,6 +9,13 @@ import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    const quizDone = localStorage.getItem('quizCompleted');
+    if (!quizDone) {
+      window.location.href = './quiz.html';
+    }
+  }, []);
+
   return (
     <div className="relative w-full bg-black">
       {/* Sticky Hero Video Background */}

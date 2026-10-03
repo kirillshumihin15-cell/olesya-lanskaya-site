@@ -529,7 +529,7 @@
                 `;
             }
             else if (step.kind === "sell") {
-                window.location.href = './';
+                localStorage.setItem('quizCompleted', 'true'); window.location.href = './';
                 return;
                 html = `
                     <div class="w-full flex flex-col h-full pt-2 pb-10 text-left">
