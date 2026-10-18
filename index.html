@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Что держит вас в тревоге за будущее | Олеся Ланская</title>
-<meta name="description" content="Бесплатный тест за 2 минуты от психолога Олеси Ланской. Узнайте, что держит вас в тревоге за будущее и на что вы можете влиять уже сейчас.">
+<title>Тест на жизненные схемы</title>
+<meta name="description" content="Почему вы раз за разом попадаете в одни и те же сценарии. Адаптированный тест на ранние дезадаптивные схемы по методу Джеффри Янга.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -59,8 +59,8 @@ main.wrap{flex:1 0 auto}
 .eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;
   color:var(--blue);font-weight:800;text-align:center;margin-bottom:18px}
 h1{font-size:36px;line-height:.97;text-align:center;margin-bottom:16px}
-.h-accent{color:var(--blue);display:block;margin-top:12px;line-height:.97;
-  text-wrap:nowrap}
+.h-accent{color:var(--blue);display:block;margin-top:14px;line-height:1.02;
+  font-size:.62em;letter-spacing:-.035em;text-wrap:balance}
 .q-title{font-size:29px;font-weight:700;line-height:1.0;letter-spacing:-.035em;
   text-align:center;text-wrap:balance;margin-bottom:28px}
 
@@ -74,6 +74,12 @@ h1{font-size:36px;line-height:.97;text-align:center;margin-bottom:16px}
   color:var(--blue);display:grid;place-items:center;font-size:11px;
   font-weight:800;margin-top:1px}
 .rule{height:1px;background:var(--line);margin:0 0 30px}
+.note{font-size:12.5px;color:var(--muted);text-align:center;margin:-14px 0 30px;text-wrap:pretty}
+.second{text-align:center;font-size:14.5px;color:var(--muted);margin:-12px 0 28px}
+.second b{color:var(--ink);font-weight:600}
+.mth-mine{display:inline-block;margin-left:8px;padding:3px 9px;border-radius:99px;
+  background:var(--blue);color:#fff;font-size:10.5px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;vertical-align:1px}
 
 /* options */
 .opts{display:flex;flex-direction:column;gap:11px}
@@ -277,6 +283,58 @@ footer a{color:#D7DEEC;text-decoration:none;margin-right:16px}
 footer a:hover{text-decoration:underline}
 footer .fine{font-size:11.5px;color:#666E7E;margin-top:14px;line-height:1.4}
 
+
+/* тест на схемы */
+.test-about{font-size:15.5px;color:var(--muted);text-align:center;margin:0 0 14px;text-wrap:pretty}
+.test-about b{color:var(--ink);font-weight:600}
+.how{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;margin:22px 0 30px;font-size:15px;color:var(--muted);
+  box-shadow:0 2px 4px rgba(11,15,25,.03),0 12px 32px rgba(11,15,25,.05)}
+.how p+p{margin-top:10px}
+.qmeta{display:flex;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--blue);font-weight:800;margin-bottom:10px}
+.qmeta span:last-child{color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.qbar{height:3px;border-radius:3px;background:var(--line);overflow:hidden;margin-bottom:26px}
+.qbar i{display:block;height:100%;background:var(--blue);transition:width .3s}
+.q-title.stmt{font-size:25px;line-height:1.08;min-height:3.3em}
+.scale .opt{display:flex;align-items:center;gap:14px;min-height:54px;padding:13px 18px}
+.num{flex:0 0 30px;height:30px;border-radius:50%;background:var(--soft);color:var(--blue);
+  display:grid;place-items:center;font-weight:700;font-size:14px;letter-spacing:0}
+.opt.picked .num{background:var(--blue);color:#fff}
+.back{display:block;margin:18px auto 0;background:none;border:none;font:inherit;font-size:14.5px;
+  color:var(--muted);cursor:pointer;padding:8px 12px}
+.sch{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px 20px;
+  box-shadow:0 1px 2px rgba(11,15,25,.04),0 10px 28px rgba(11,15,25,.05)}
+.sch+.sch{margin-top:12px}
+.sch-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.sch-name{font-size:22px;font-weight:700;letter-spacing:-.045em;line-height:1.05}
+.sch-sub{font-size:14px;color:var(--muted);margin-top:5px}
+.sch-score{text-align:right;flex:0 0 auto;font-variant-numeric:lining-nums tabular-nums}
+.sch-score b{display:block;font-size:30px;line-height:1;letter-spacing:0}
+.sch-score span{font-size:12px;color:var(--muted);letter-spacing:0}
+.bar{display:block;height:6px;border-radius:6px;background:var(--line);overflow:hidden;margin:16px 0 12px}
+.bar i{display:block;height:100%;border-radius:6px;background:#A9C0F7}
+.bar.mid i{background:#6F97FA} .bar.hi i{background:var(--blue)}
+.sch-lvl{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:10px}
+.sch-txt{font-size:15.5px;color:var(--muted)}
+.all{list-style:none;background:var(--surface);border:1px solid var(--line);border-radius:18px;
+  padding:8px 20px;margin:26px 0}
+.all li{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;align-items:baseline}
+.all li+li{border-top:1px solid var(--line)}
+.all-name{font-size:15px}
+.all-sum{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:0}
+.all .bar{grid-column:1/-1;margin:6px 0 0;height:4px}
+.all-cap{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);
+  font-weight:800;text-align:center;margin-top:34px}
+.legend{font-size:13px;color:var(--muted);text-align:center;margin-top:-14px}
+.next{background:var(--soft);border:1px solid rgba(47,107,255,.18);border-radius:20px;
+  padding:26px 22px;margin:34px 0 22px}
+.next h3{font-size:24px;text-align:center;margin-bottom:16px}
+.next p{font-size:15.5px;color:var(--muted)}
+.next p+p{margin-top:12px}
+.next .accent{color:var(--ink);font-weight:600}
+.fine-note{font-size:13px;color:var(--muted);text-align:center;margin-top:18px;text-wrap:pretty}
+@media(max-width:460px){ .q-title.stmt{font-size:22px} .sch-name{font-size:20px} }
 @media(max-width:460px){
   h1{font-size:29px;line-height:1.0}
   .q-title{font-size:24px}
@@ -299,7 +357,7 @@ footer .fine{font-size:11.5px;color:#666E7E;margin-top:14px;line-height:1.4}
 <header class="hdr">
   <div class="hdr-in">
     <span class="brand-wrap">
-      <img class="avatar" src="opora/olesya-avatar.jpg" alt="Олеся Ланская">
+      <img class="avatar" src="olesya-avatar.jpg" alt="Олеся Ланская">
       <span class="brand" id="brandName">Олеся Ланская</span>
     </span>
     <span class="brand-note" id="brandNote">Психолог</span>
@@ -310,13 +368,14 @@ footer .fine{font-size:11.5px;color:#666E7E;margin-top:14px;line-height:1.4}
 
 <!-- интро + первый вопрос -->
 <section class="screen on" id="s-intro">
-  <p class="eyebrow">Бесплатный тест · 2 минуты</p>
-  <h1>Что держит вас в тревоге за будущее<span class="h-accent">И на что вы влияете<br>уже сейчас</span></h1>
-  <ul class="promise">
-    <li><span class="tick">✓</span><span>Персональный разбор сразу после теста</span></li>
-    <li><span class="tick">✓</span><span>Покажет, где вы теряете больше всего сил</span></li>
-    <li><span class="tick">✓</span><span>Даст первый шаг на ближайшие 30 дней</span></li>
-  </ul>
+  <p class="eyebrow">Бесплатный тест · 5 минут</p>
+  <h1>Тест на жизненные схемы<span class="h-accent">Почему вы раз за разом попадаете в одни и те же сценарии</span></h1>
+  <p class="test-about">Это адаптированный тест на ранние дезадаптивные схемы по методу Джеффри Янга — основателя схема-терапии. Схема — это глубинная установка о себе и мире, которая закладывается в детстве и потом неосознанно управляет вашими отношениями, самооценкой и решениями. Именно поэтому мы снова и снова наступаем на те же грабли, не понимая, почему.</p>
+  <p class="test-about"><b>Важно: это не диагноз, а зеркало.</b> Тест помогает увидеть закономерность и понять, с чем стоит поработать — самостоятельно или со специалистом.</p>
+  <div class="how">
+    <p>Ниже — 40 утверждений, сгруппированных по 10 схемам (по 4 на каждую). Читайте каждое и оценивайте, насколько оно про вас, по шкале от 1 до 6.</p>
+    <p>Отвечайте честно и по первому ощущению, не ищите «правильный» ответ. Баллы посчитаются автоматически.</p>
+  </div>
   <div class="rule"></div>
   <div id="q-mount"></div>
 </section>
@@ -329,54 +388,55 @@ footer .fine{font-size:11.5px;color:#666E7E;margin-top:14px;line-height:1.4}
 <section class="screen" id="s-insight">
   <h2 class="q-title">Уже видна закономерность</h2>
   <p class="insight-text" id="insightText"></p>
-  <button class="btn" data-go="q5">Продолжить</button>
+  <button class="btn" data-go="continue">Продолжить</button>
 </section>
 
 <section class="screen" id="s-load2">
   <h2 class="q-title">Собираем ваш разбор…</h2>
   <div class="steps">
-    <div class="step" id="st1"><span class="step-dot">✓</span><span>Определяем главный источник тревоги</span></div>
-    <div class="step" id="st2"><span class="step-dot">✓</span><span>Смотрим, где уходят силы</span></div>
-    <div class="step" id="st3"><span class="step-dot">✓</span><span>Формируем персональный результат</span></div>
+    <div class="step" id="st1"><span class="step-dot">✓</span><span>Считаем сумму по каждой из 10 схем</span></div>
+    <div class="step" id="st2"><span class="step-dot">✓</span><span>Определяем ведущие схемы</span></div>
+    <div class="step" id="st3"><span class="step-dot">✓</span><span>Готовим расшифровку</span></div>
   </div>
 </section>
 
 <section class="screen" id="s-result">
   <p class="eyebrow">Ваш результат</p>
-  <h2 class="q-title">Вы тратите силы на то, что не можете изменить</h2>
-  <p class="lead">Тревога держится не потому, что вокруг непредсказуемо. Она держится потому, что вы пытаетесь удержать контроль там, где его нет — и не опираетесь на то, что вам действительно подвластно.</p>
-  <div class="diag">
-    <div class="card"><div class="card-label">Главный источник</div><div class="card-val" id="cSrc">—</div></div>
-    <div class="card"><div class="card-label">Что её поддерживает</div><div class="card-val" id="cKeep">—</div></div>
-    <div class="card"><div class="card-label">Цена</div><div class="card-val" id="cCost">—</div></div>
-    <div class="card"><div class="card-label">Риск</div><div class="card-val" id="cRisk">—</div></div>
-  </div>
-  <button class="btn" data-go="transform">Что с этим делать? →</button>
-</section>
+  <h2 class="q-title" id="topTitle">Ваши ведущие схемы</h2>
+  <p class="lead">Обратите внимание на 1–3 блока с самыми высокими баллами — это ваши ведущие схемы. Именно они чаще всего и создают «день сурка» в отношениях, самооценке и реализации.</p>
+  <div id="topMount" style="margin-top:26px"></div>
 
-<section class="screen" id="s-transform">
-  <h2 class="q-title">Что меняется за 14 дней</h2>
-  <p class="lead">Судя по вашим ответам, дело не в том, чтобы перестать бояться. Дело в том, чтобы вернуть себе точку опоры.</p>
-  <div class="pp" id="ppMount"></div>
-  <button class="btn btn-lg" data-go="offer">Хочу вернуть опору</button>
+  <p class="all-cap">Все 10 схем</p>
+  <ul class="all" id="allMount"></ul>
+  <p class="legend">4–11 — почти не выражена · 12–17 — заметна · 18–24 — выражена сильно</p>
+
+  <div class="next">
+    <h3>Что дальше</h3>
+    <p>Схемы — это не приговор. Это привычные маршруты психики, которые когда-то помогли вам выжить. Их можно перепрошить — и тогда вы перестаёте ходить по кругу.</p>
+    <p>Хорошая новость: почти все эти схемы сводятся к одному — нехватке внутренней опоры. Когда опора появляется, чужой уход перестаёт пугать, критика не ранит, а любовь больше не нужно заслуживать.</p>
+    <p>Если вы узнали себя в одной-двух ведущих схемах — это уже половина пути. Второй шаг — научиться выращивать ту самую опору внутри.</p>
+    <p class="accent" id="nextStep"></p>
+  </div>
+  <button class="btn btn-lg" data-go="offer">Хочу вырастить опору</button>
+  <p class="fine-note">Это не диагноз и не замена работе со специалистом. Если какая-то тема отозвалась особенно сильно и болезненно, бережно отнеситесь к себе и, по возможности, обратитесь к психологу.</p>
 </section>
 
 <!-- оффер -->
 <section class="screen offer" id="s-offer">
   <div class="hero">
-    <img class="hero-img" src="opora/hero.jpg" alt="Олеся Ланская">
+    <img class="hero-img" src="hero.jpg" alt="Олеся Ланская">
     <div class="hero-text" style="display:none">
       <p class="hero-kicker">Практикум · 14 дней</p>
       <h2>Опора</h2>
-      <p class="hero-sub">Как перестать жить в тревоге за будущее</p>
+      <p class="hero-sub">Как перестать жить в тревоге и вернуть себе опору</p>
     </div>
   </div>
 
-  <p class="book-title">Определённости не будет.<span class="bt-accent">Опора — может быть всегда</span></p>
+  <p class="book-title">Схему не стереть за две недели.<span class="bt-accent">Опору — можно собрать</span></p>
   <p class="book-sub">Каждый день — короткий разбор и одно задание на 15 минут</p>
 
   <div class="author">
-    <img src="opora/olesya-author.jpg" alt="Олеся Ланская">
+    <img src="olesya-author.jpg" alt="Олеся Ланская">
     <div class="author-txt">
       <div class="author-name">Олеся Ланская</div>
       <div class="author-role">Психолог. 12 лет практики. Автор методики «Внутренняя Опора» и выхода из тревожных сценариев</div>
@@ -399,45 +459,45 @@ footer .fine{font-size:11.5px;color:#666E7E;margin-top:14px;line-height:1.4}
     <h3>Что изменится</h3>
     <p class="phase">Первая неделя</p>
     <ul class="bullets">
-      <li>Перестанете начинать утро с новостей</li>
-      <li>Увидите, сколько сил уходит на то, что вы не решаете</li>
-      <li>Станет понятно, чего вы боитесь конкретно, а не «всего вообще»</li>
+      <li>Увидите, в какие моменты включается ваша схема</li>
+      <li>Станет понятно, какая тревога про сейчас, а какая — старая</li>
+      <li>Увидите, сколько сил уходит на то, что от вас не зависит</li>
     </ul>
     <p class="phase">Ко второй неделе</p>
     <ul class="bullets">
-      <li>Сон начнёт восстанавливаться</li>
-      <li>Появится ощущение, что что-то зависит от вас</li>
-      <li>Сможете говорить о будущем без спора и без молчания</li>
+      <li>Сможете сказать «мне нужно подумать» вместо автоматического «да»</li>
+      <li>Перестанете брать на себя чужие чувства и ожидания</li>
+      <li>Чужая оценка станет выбивать слабее и ненадолго</li>
     </ul>
     <p class="phase">После</p>
     <ul class="bullets">
-      <li>У вас будет система опор, к которой можно возвращаться</li>
-      <li>Вы начнёте принимать решения, не дожидаясь определённости</li>
+      <li>У вас будет система опор, к которой можно возвращаться в плохой день</li>
+      <li>Вы начнёте замечать свой сценарий раньше, чем он успеет сработать</li>
     </ul>
   </div>
 
   <div class="method">
     <h3>Как устроена <b>ОПОРА</b></h3>
-    <p class="mth-lead">Четыре шага, по одному на каждую часть. Каждый следующий держится на предыдущем — поэтому порядок имеет значение.</p>
+    <p class="mth-lead">Четыре шага, по одному на каждую часть. Свой ключевой шаг вы уже видели в результате, но держится он на предыдущих. Поэтому порядок имеет значение.</p>
     <ol class="mth-list">
       <li class="mth-step">
         <span class="mth-days">Дни 1–3</span>
-        <span class="mth-verb">Назвать</span>
+        <span class="mth-verb" id="mv1">Назвать</span>
         <p class="mth-txt">Страх без названия занимает всё пространство. В первые три дня вы его называете — и он становится конечным.</p>
       </li>
       <li class="mth-step">
         <span class="mth-days">Дни 4–7</span>
-        <span class="mth-verb">Разделить</span>
+        <span class="mth-verb" id="mv2">Разделить</span>
         <p class="mth-txt">Часть будущего вы решаете, часть — нет. Круг контроля разделяет одно и другое, и тревога перестаёт тратиться впустую.</p>
       </li>
       <li class="mth-step">
         <span class="mth-days">Дни 8–10</span>
-        <span class="mth-verb">Защитить</span>
+        <span class="mth-verb" id="mv3">Защитить</span>
         <p class="mth-txt">Чужая тревога передаётся быстрее собственной. Здесь вы учитесь узнавать давление через страх и не брать его себе.</p>
       </li>
       <li class="mth-step">
         <span class="mth-days">Дни 11–14</span>
-        <span class="mth-verb">Опереться</span>
+        <span class="mth-verb" id="mv4">Опереться</span>
         <p class="mth-txt">Опора — это не настрой, а несколько конкретных вещей, которые работают в плохой день. Вы собираете свои и оставляете их себе.</p>
       </li>
     </ol>
@@ -481,9 +541,9 @@ footer .fine{font-size:11.5px;color:#666E7E;margin-top:14px;line-height:1.4}
   </div>
 
   <div class="final">
-    <img class="final-img" src="opora/opora-book.jpg" alt="Практикум «Опора»">
+    <img class="final-img" src="opora-book.jpg" alt="Практикум «Опора»">
     <div class="final-name">Опора</div>
-    <p class="final-sub">Всё, что нужно, чтобы перестать жить в тревоге за будущее</p>
+    <p class="final-sub">Всё, что нужно, чтобы собрать свою опору</p>
 
     <div class="final-price">
       <s>2990&nbsp;₽</s>
@@ -523,7 +583,7 @@ const CONFIG = {
   note:    'Психолог',
   payUrl:  'https://web.tribute.tg/p/Hp4',
   minutes: 20,
-  quiz:    'opora14'
+  quiz:    'shema'
 };
 document.getElementById('brandName').textContent = CONFIG.brand;
 document.getElementById('brandNote').textContent = CONFIG.note;
@@ -535,90 +595,95 @@ const payHref = CONFIG.payUrl;
 document.getElementById('buy1').href = payHref;
 document.getElementById('buy2').href = payHref;
 
-/* ===== ВОПРОСЫ ===== */
-const QUESTIONS = [
- { id:'q1', title:'Что вы делаете в первые пять минут после пробуждения?', opts:[
-   {t:'Беру телефон и читаю новости'},
-   {t:'Проверяю курс, счёт или почту'},
-   {t:'Лежу и прокручиваю мысли'},
-   {t:'Встаю и сразу иду по делам, чтобы не думать'} ]},
-
- { id:'q2', title:'Как тревога проявляется в теле?', opts:[
-   {t:'Просыпаюсь в четыре-пять утра и больше не засыпаю', risk:'Хроническое недосыпание и истощение'},
-   {t:'Постоянное напряжение — челюсть, плечи, шея',       risk:'Тело перестанет справляться первым'},
-   {t:'Сердце колотится без причины',                      risk:'Организм работает на износ'},
-   {t:'Никак. Я будто ничего не чувствую',                 risk:'Онемение, из которого труднее всего выходить'} ]},
-
- { id:'q3', title:'Что вы отложили «пока не станет понятнее»?', opts:[
-   {t:'Крупную покупку, ремонт, машину',              cost:'Жизнь отложена до лучших времён'},
-   {t:'Смену работы или своё дело',                   cost:'Нереализованные годы'},
-   {t:'Ребёнка, свадьбу, переезд',                    cost:'Решения, которые нельзя отложить навсегда'},
-   {t:'Ничего конкретного. Планов просто больше нет', cost:'Существование вместо жизни'} ]},
-
- { id:'q4', title:'Сколько раз за день вы открываете новости?', opts:[
-   {t:'Один-два раза',                              keep:'Фоновое ожидание плохих новостей',
-    ins:'Новостей вы читаете немного, но плохих ждёте постоянно. Тревога держится не на количестве информации, а на ожидании, которое не выключается.'},
-   {t:'Несколько раз, между делами',                keep:'Привычка проверять реальность на угрозу',
-    ins:'Вы проверяете новости между делами — будто сверяете, всё ли ещё в порядке. Каждая проверка ненадолго успокаивает и тут же заводит тревогу заново.'},
-   {t:'Постоянно, руки сами тянутся к телефону',    keep:'Информационный поток, который держит в напряжении',
-    ins:'Руки тянутся к телефону сами. Так тревога получает подпитку каждые несколько минут — и у неё нет ни одного шанса утихнуть.'},
-   {t:'Специально не читаю, но всё равно узнаю',    keep:'Тревога без выхода, загнанная внутрь',
-    ins:'Вы отгородились от новостей, но тревога всё равно находит дорогу — через людей и обрывки разговоров. Закрыться получилось, а выхода у неё так и не появилось.'} ]},
-
- { id:'q5', title:'Что вы делаете с деньгами последний год?', opts:[
-   {t:'Держу и боюсь потратить'},
-   {t:'Трачу сразу — всё равно обесценится'},
-   {t:'Пытаюсь копить, но не понимаю, на что и зачем'},
-   {t:'Стараюсь об этом не думать'} ]},
-
- { id:'q6', title:'Когда близкие заводят разговор о том, что будет дальше, вы…', opts:[
-   {t:'Спорю и раздражаюсь'},
-   {t:'Молчу, чтобы никого не пугать'},
-   {t:'Заражаюсь их тревогой ещё сильнее'},
-   {t:'Перевожу тему'} ]},
-
- { id:'q7', title:'Какая мысль возвращается чаще всего?', opts:[
-   {t:'Всё, что построено, может исчезнуть', src:'Страх потерять то, что построено'},
-   {t:'Я не успею. Время уходит',             src:'Ощущение уходящего времени'},
-   {t:'От меня вообще ничего не зависит',     src:'Утрата чувства влияния'},
-   {t:'Если что-то случится, я не справлюсь', src:'Недоверие к собственной устойчивости'} ]},
-
- { id:'q8', title:'Что за последний год зависело именно от вас?', opts:[
-   {t:'Почти ничего'},
-   {t:'Работа и деньги'},
-   {t:'Моё состояние и отношения'},
-   {t:'Сложно сказать'} ]},
-
- { id:'q9', title:'Что изменилось бы, если бы тревога ушла?', opts:[
-   {t:'Появились бы силы действовать'},
-   {t:'Вернулся бы нормальный сон'},
-   {t:'Ушли бы срывы на близких'},
-   {t:'Получилось бы жить, а не ждать'} ]},
+/* ===== ТЕСТ (текст дословно, менять нельзя) ===== */
+const SCALE = [
+ {v:1, t:'совсем не про меня'},
+ {v:2, t:'почти не про меня'},
+ {v:3, t:'скорее не про меня'},
+ {v:4, t:'отчасти про меня'},
+ {v:5, t:'во многом про меня'},
+ {v:6, t:'это точно про меня'}
 ];
 
-const INSIGHTS = [
- 'Тревога за будущее почти никогда не про будущее. Она про то, что прямо сейчас вы тратите силы на вещи, которые не можете изменить — и не остаётся на то, что можете.',
- 'Судя по ответам, вы живёте в режиме ожидания. Не отдыхаете как следует, но и не действуете — просто ждёте, когда станет ясно.',
- 'Вы не боитесь будущего. Вы устали от того, что не можете на него опереться.'
+const BLOCKS = [
+ {name:'Покинутость', sub:'страх, что близкие уйдут или исчезнут', step:4, items:[
+  'Я часто боюсь, что люди, которых я люблю, меня бросят.',
+  'Когда близкий человек отдаляется, я впадаю в тревогу или панику.',
+  'Мне трудно поверить, что отношения будут стабильными и надёжными.',
+  'Я цепляюсь за людей сильнее, чем мне самой хотелось бы.'],
+  text:'За этим часто стоит ранний опыт, когда близкий был непредсказуем — то рядом, то нет. Во взрослой жизни это выливается в тревожную привязанность: вы быстро привязываетесь, тяжело переносите дистанцию, можете терпеть неподходящие отношения из страха остаться одной. Ваша задача — учиться опираться на себя, чтобы чужой уход перестал означать катастрофу.'},
+ {name:'Эмоциональная депривация', sub:'ощущение, что ваши потребности никто не удовлетворит', step:4, items:[
+  'Мне кажется, что рядом нет человека, который по-настоящему меня понимает.',
+  'Я привыкла, что заботиться о моих чувствах некому, кроме меня самой.',
+  'Мне сложно просить о поддержке — кажется, что всё равно не получу.',
+  'Даже в отношениях я часто чувствую себя эмоционально одинокой.'],
+  text:'Внутренняя убеждённость, что ваши эмоциональные потребности не будут удовлетворены. Вы привыкли не ждать тепла и заботы — и часто даже не просите. В итоге выбираете холодных партнёров (подтверждая схему) или не замечаете заботу, когда она есть. Шаг — разрешить себе хотеть близости и говорить о своих потребностях вслух.'},
+ {name:'Дефективность / стыд', sub:'«со мной что-то не так, настоящую меня нельзя любить»', step:4, items:[
+  'В глубине души мне кажется, что со мной что-то не так.',
+  'Я боюсь, что если люди узнают меня настоящую, они отвернутся.',
+  'Я часто стыжусь себя, своих чувств или своего прошлого.',
+  'Мне трудно принять комплимент — я будто его не заслуживаю.'],
+  text:'Самая болезненная схема: ощущение «со мной что-то фундаментально не так». Отсюда страх близости (вдруг разглядят), трудности с принятием любви и комплиментов, жизнь с оглядкой. Важно понять: это чувство — не правда о вас, а старая рана. С ней хорошо работает бережная терапия.'},
+ {name:'Недоверие / ожидание вреда', sub:'«люди используют и предадут»', step:2, items:[
+  'Я жду от людей подвоха, даже когда повода нет.',
+  'Мне трудно по-настоящему расслабиться и довериться кому-то.',
+  'Я часто проверяю людей, прежде чем подпустить ближе.',
+  'Мне кажется, что если я открою слабость, этим воспользуются против меня.'],
+  text:'Чаще формируется там, где доверие однажды предали. Вы живёте в лёгкой обороне, проверяете людей, не подпускаете близко. Защищает — но и не даёт настоящей близости. Задача — учиться различать, где опасность реальна, а где это старый сигнал тревоги.'},
+ {name:'Подчинение', sub:'подавление своих желаний ради других', step:3, items:[
+  'Я часто соглашаюсь на то, чего на самом деле не хочу.',
+  'Мне проще уступить, чем отстаивать своё.',
+  'Я боюсь, что если скажу «нет», на меня разозлятся или отвергнут.',
+  'Свои желания я замечаю в последнюю очередь — после чужих.'],
+  text:'Привычка подавлять свои желания, чтобы не злить других и не быть отвергнутой. Вы соглашаетесь на нежеланное, вам трудно сказать «нет». Корень — в среде, где своё мнение иметь было небезопасно. Шаг — тренировать маленькие отказы и замечать собственные желания.'},
+ {name:'Самопожертвование', sub:'чужие нужды всегда важнее своих', step:3, items:[
+  'Я чувствую вину, когда забочусь о себе, а не о других.',
+  'Я беру на себя слишком много ответственности за чувства окружающих.',
+  'Мне легче отдавать, чем принимать.',
+  'Я часто выматываюсь, спасая и поддерживая всех вокруг.'],
+  text:'Вы ставите чужие нужды выше своих, чувствуете вину за заботу о себе, выматываетесь, спасая всех. Часто за этим — убеждение «меня любят за пользу». Важно учиться брать, а не только отдавать, и беречь свой ресурс.'},
+ {name:'Жёсткие стандарты / перфекционизм', sub:'«всегда недостаточно хорошо»', step:2, items:[
+  'Что бы я ни сделала, мне кажется, что можно было лучше.',
+  'Я редко позволяю себе отдых, пока не выполнила всё идеально.',
+  'Ошибки переживаю тяжело и долго себя за них ругаю.',
+  'Я предъявляю к себе куда более высокие требования, чем к другим.'],
+  text:'Планка так высока, что любой результат кажется недостаточным. Отдых — только по заслугам, ошибки — повод для самобичевания. Выматывает и крадёт радость. Шаг — учиться принципу «сделано лучше, чем идеально» и разрешать себе быть живой, а не безупречной.'},
+ {name:'Зависимость от одобрения', sub:'самооценка держится на чужой оценке', step:4, items:[
+  'Моё настроение сильно зависит от того, как ко мне относятся другие.',
+  'Мне важно нравиться — иногда важнее, чем быть собой.',
+  'Критика надолго выбивает меня из колеи.',
+  'Я часто подстраиваюсь под ожидания других, теряя себя.'],
+  text:'Самооценка держится на том, как к вам относятся другие. Критика ранит надолго, вы подстраиваетесь и теряете себя. Задача — переносить опору внутрь, чтобы ваша ценность перестала зависеть от чужой реакции.'},
+ {name:'Уязвимость / тревога', sub:'ожидание, что случится что-то плохое', step:1, items:[
+  'Я часто жду, что произойдёт что-то плохое.',
+  'Меня легко выбивает из равновесия тревога о будущем.',
+  'Я стараюсь всё контролировать, потому что иначе становится страшно.',
+  'Даже когда всё хорошо, внутри живёт ощущение «это ненадолго».'],
+  text:'Фоновое ожидание беды и потребность всё контролировать. Даже в спокойствии нет покоя. Часто корни — в небезопасном детстве, где расслабляться было нельзя. Шаг — работать с нервной системой, возвращать телу ощущение безопасности здесь и сейчас.'},
+ {name:'Подавление эмоций', sub:'запрет на чувства и спонтанность', step:1, items:[
+  'Мне трудно открыто выражать свои чувства.',
+  'Я привыкла держать всё в себе, чтобы не быть обузой.',
+  'Спонтанность и расслабленность даются мне с трудом.',
+  'Я часто кажусь спокойной снаружи, хотя внутри буря.'],
+  text:'Запрет на чувства: вы держите всё в себе, кажетесь спокойной, хотя внутри буря. Чаще формируется там, где эмоции были «неудобны». Задача — учиться безопасно выражать чувства, а не копить их.'}
 ];
 
-const PAIRS = [
- {now:'Просыпаетесь в четыре утра и до будильника прокручиваете, что будет дальше',
-  next:'Просыпаетесь по будильнику и высыпаетесь впервые за долгое время'},
- {now:'Открываете новости в очереди, в лифте, за едой и перед сном — руки тянутся сами',
-  next:'Читаете новости один раз в день, в отведённое время, и закрываете'},
- {now:'На вопрос «что планируешь через год» отвечаете «поживём — увидим»',
-  next:'У вас есть план на ближайшие месяцы, который не отменяется чужими решениями'},
- {now:'Пересчитываете деньги и всё равно не чувствуете себя в безопасности',
-  next:'Знаете, что делаете с деньгами и почему — и это решение принято вами, а не страхом'},
- {now:'Срываетесь на близких из-за мелочи, а потом полночи чувствуете вину',
-  next:'Замечаете напряжение до того, как оно выливается на тех, кто рядом'},
- {now:'После разговора с родителями или коллегами тревога усиливается вдвое',
-  next:'Выходите из таких разговоров, оставляя чужую тревогу её хозяину'}
-];
+/* уровни — как в разделе «Как читать результаты» */
+function level(sum){
+  if(sum >= 18) return {k:'hi',  t:'Выражена сильно', d:'Скорее всего, именно она стоит за вашими повторяющимися сценариями. На неё и стоит обратить внимание в первую очередь.'};
+  if(sum >= 12) return {k:'mid', t:'Заметна',          d:'Она иногда включается и влияет на ваши решения.'};
+  return               {k:'lo',  t:'Почти не выражена', d:'Эта тема вас, скорее всего, не держит.'};
+}
+
+const STEPS = {1:'Дни 1–3 · Назвать',2:'Дни 4–7 · Разделить',3:'Дни 8–10 · Защитить',4:'Дни 11–14 · Опереться'};
+
+/* плоский список 40 утверждений в исходном порядке */
+const ITEMS = [];
+BLOCKS.forEach((b,bi)=>b.items.forEach(t=>ITEMS.push({t, b:bi})));
 
 /* ===== ЛОГИКА ===== */
-const A = {}; let idx = 0;
+const ANS = new Array(ITEMS.length).fill(null); let idx = 0;
+const HALF = 20; /* экран «уже видна закономерность» — после 20-го утверждения */
 const mount = document.getElementById('q-mount');
 
 function show(id){
@@ -627,38 +692,67 @@ function show(id){
   window.scrollTo({top:0,behavior:'instant'});
 }
 
+function hideIntro(){
+  document.getElementById('s-intro')
+    .querySelectorAll('.eyebrow,h1,.test-about,.how,.rule')
+    .forEach(n=>n.style.display='none');
+}
+
 function renderQ(i){
-  const q = QUESTIONS[i];
-  mount.innerHTML = '';
-  const h = document.createElement('h2');
-  h.className = 'q-title'; h.textContent = q.title;
-  const box = document.createElement('div'); box.className = 'opts';
-  q.opts.forEach((o,n)=>{
-    const b = document.createElement('button');
-    b.className = 'opt'; b.type = 'button'; b.textContent = o.t;
-    b.style.animationDelay = (n*50)+'ms';
-    b.addEventListener('click',()=>pick(q,o,b));
-    box.appendChild(b);
+  const it = ITEMS[i], b = BLOCKS[it.b];
+  mount.innerHTML = `
+    <div class="qmeta"><span>Блок ${it.b+1} из 10 · ${b.name}</span><span>${i+1} / ${ITEMS.length}</span></div>
+    <div class="qbar"><i style="width:${(i/ITEMS.length*100).toFixed(1)}%"></i></div>
+    <h2 class="q-title stmt"></h2>
+    <div class="opts scale"></div>
+    ${i>0?'<button class="back" type="button">← Назад</button>':''}`;
+  mount.querySelector('.stmt').textContent = (i+1)+'. '+it.t;
+  const box = mount.querySelector('.opts');
+  SCALE.forEach((o,n)=>{
+    const btn = document.createElement('button');
+    btn.className = 'opt'; btn.type = 'button';
+    if(ANS[i]===o.v) btn.classList.add('picked');
+    btn.innerHTML = `<span class="num">${o.v}</span><span></span>`;
+    btn.lastChild.textContent = o.t;
+    btn.style.animationDelay = (n*35)+'ms';
+    btn.addEventListener('click',()=>pick(i,o.v,btn));
+    box.appendChild(btn);
   });
-  mount.appendChild(h); mount.appendChild(box);
+  const back = mount.querySelector('.back');
+  if(back) back.addEventListener('click',()=>{ idx--; renderQ(idx); });
 }
 
-function pick(q,o,el){
-  A[q.id] = o;
-  el.classList.add('picked');
+let busy = false;
+function pick(i,v,el){
+  if(busy) return; busy = true;
+  ANS[i] = v; el.classList.add('picked');
   setTimeout(()=>{
-    if(q.id === 'q4'){ goInsight(); return; }
-    if(idx === QUESTIONS.length-1){ goAnalyze(); return; }
-    idx++; renderQ(idx);
-    document.getElementById('s-intro')
-      .querySelectorAll('.eyebrow,h1,.promise,.rule')
-      .forEach(n=>n.style.display='none');
-  },220);
+    busy = false;
+    if(i === 0) hideIntro();
+    if(i === HALF-1 && !shownInsight){ goInsight(); return; }
+    if(i === ITEMS.length-1){ goAnalyze(); return; }
+    idx = i+1; renderQ(idx);
+    window.scrollTo({top:0,behavior:'instant'});
+  },200);
 }
 
+function sums(){
+  const s = BLOCKS.map(()=>0);
+  ANS.forEach((v,i)=>{ if(v) s[ITEMS[i].b] += v; });
+  return s;
+}
+function ranking(){
+  const s = sums();
+  return BLOCKS.map((b,i)=>i).sort((a,b)=>s[b]-s[a] || a-b);
+}
+
+let shownInsight = false;
 function goInsight(){
+  shownInsight = true;
+  const s = sums(), top = ranking().filter(i=>i<5)[0], b = BLOCKS[top];
   document.getElementById('insightText').textContent =
-    (A.q4 && A.q4.ins) || INSIGHTS[0];
+    `Пока сильнее всего звучит схема «${b.name}» — ${b.sub}: ${s[top]} из 24. ` +
+    `Осталось 20 утверждений, и картина станет полной.`;
   show('s-load1');
   setTimeout(()=>show('s-insight'),1900);
 }
@@ -673,26 +767,54 @@ function goAnalyze(){
 }
 
 function buildResult(){
-  document.getElementById('cSrc').textContent  = A.q7?.src  || 'Утрата чувства влияния';
-  document.getElementById('cKeep').textContent = A.q4?.keep || 'Информационный поток, который держит в напряжении';
-  document.getElementById('cCost').textContent = A.q3?.cost || 'Жизнь отложена до лучших времён';
-  document.getElementById('cRisk').textContent = A.q2?.risk || 'Организм работает на износ';
+  const s = sums(), order = ranking();
+  /* ведущие: 1–3 блока с самыми высокими баллами (из тех, что хотя бы заметны) */
+  let lead = order.slice(0,3).filter(i=>s[i]>=12);
+  if(!lead.length) lead = [order[0]];
 
-  const m = document.getElementById('ppMount'); m.innerHTML = '';
-  PAIRS.forEach(p=>{
-    m.insertAdjacentHTML('beforeend',`
-      <div class="pair">
-        <div class="pp-row now"><div class="pp-tag">Сейчас</div><div class="pp-txt">${p.now}</div></div>
-        <div class="pp-row next"><div class="pp-tag">Через 14 дней</div><div class="pp-txt">${p.next}</div></div>
+  const top = document.getElementById('topMount'); top.innerHTML = '';
+  lead.forEach((i,n)=>{
+    const b = BLOCKS[i], L = level(s[i]);
+    top.insertAdjacentHTML('beforeend',`
+      <div class="sch">
+        <div class="sch-head">
+          <div><div class="card-label">${n===0?'Ведущая схема':'Тоже выражена'}</div>
+               <div class="sch-name"></div><div class="sch-sub"></div></div>
+          <div class="sch-score"><b>${s[i]}</b><span>из 24</span></div>
+        </div>
+        <div class="bar ${L.k}"><i style="width:${(s[i]/24*100).toFixed(0)}%"></i></div>
+        <p class="sch-lvl ${L.k}">${L.t}. ${L.d}</p>
+        <p class="sch-txt"></p>
       </div>`);
+    const el = top.lastElementChild;
+    el.querySelector('.sch-name').textContent = b.name;
+    el.querySelector('.sch-sub').textContent = b.sub;
+    el.querySelector('.sch-txt').textContent = b.text;
   });
+  document.getElementById('topTitle').textContent =
+    lead.length>1 ? 'Ваши ведущие схемы' : 'Ваша ведущая схема';
+
+  const all = document.getElementById('allMount'); all.innerHTML = '';
+  order.forEach(i=>{
+    const L = level(s[i]);
+    all.insertAdjacentHTML('beforeend',`
+      <li><span class="all-name">${BLOCKS[i].name}</span><span class="all-sum">${s[i]}</span>
+        <span class="bar ${L.k}"><i style="width:${(s[i]/24*100).toFixed(0)}%"></i></span></li>`);
+  });
+
+  /* ключевой шаг практикума — по ведущей схеме */
+  const step = BLOCKS[lead[0]].step;
+  document.getElementById('nextStep').textContent =
+    `Для схемы «${BLOCKS[lead[0]].name}» в практикуме «Опора» ключевой шаг — ${STEPS[step]}.`;
+  document.querySelectorAll('.mth-mine').forEach(n=>n.remove());
+  const mv = document.getElementById('mv'+step);
+  if(mv) mv.insertAdjacentHTML('beforeend','<span class="mth-mine">ваш шаг</span>');
 }
 
 document.querySelectorAll('[data-go]').forEach(b=>{
   b.addEventListener('click',()=>{
     const to = b.dataset.go;
-    if(to === 'q5'){ idx = 4; renderQ(idx); show('s-intro'); }
-    if(to === 'transform'){ show('s-transform'); }
+    if(to === 'continue'){ idx = HALF; renderQ(idx); show('s-intro'); }
     if(to === 'offer'){ show('s-offer'); startClock(); }
   });
 });
